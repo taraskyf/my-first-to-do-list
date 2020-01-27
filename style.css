@@ -1,0 +1,39 @@
+body {
+  background-color: #66CDAA;
+}
+h1 {
+  margin-left: 30%;
+  margin-top: 3%;
+  font-family: cursive;
+  color: brown;
+}
+span {
+  font-size: -webkit-xxx-large;
+}
+#mainWindow {
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-top: 2%;
+  background-color: #d8bf6c;
+  width: 50%;
+  height: 70%;
+  position: relative;
+}
+#buttonAddtoDoItem {
+  margin-left: 35%;
+  margin-top: 3%;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  font-family: cursive;
+}
+#newItem, #buttonOk, #newNameList, #buttonDeleteItem {
+  margin-left: 5%;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+#nameItem {
+  font-size: x-large;
+  color: brown;
+  font-family: cursive;
+}
