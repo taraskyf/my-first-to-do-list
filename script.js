@@ -25,6 +25,18 @@ function func1() {
   button_Ok.addEventListener('click', funcSaveValueNewItem);
   button_Delete_Item.addEventListener('click', funcDeleteItem);
 
+  new_Name_List.addEventListener('blur', stringControl);
+
+  function stringControl() {
+    let writtenText = new_Name_List.value.split('');
+    if(writtenText.length > 20) {
+      new_Name_List.style.borderColor='red';
+      // button_Ok.removeEventListener('click', funcSaveValueNewItem);
+      button_Ok.disabled = true;
+    }
+    else {button_Ok.disabled = false;}
+  }
+
   function funcSaveValueNewItem() {
     new_Name_List.outerHTML = '<span id="nameItem">' + new_Name_List.value + '</span>'
   }
