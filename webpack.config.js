@@ -5,5 +5,6 @@ module.exports = {
   output: {
     filename: 'my-first-webpack.bundle.js'
   },
+
   watch: true
 };
